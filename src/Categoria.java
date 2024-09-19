@@ -31,9 +31,8 @@ public class Categoria {
     }
 
     public void exibirCursosPorCategoria(){
-        System.out.println("Categoria do curso: " + this.getNome());
         for(Curso curso: cursos){
-            System.out.println("Nome do curso: " + curso.getNome());
+            System.out.println(curso.getNome());
         }
 
     }
