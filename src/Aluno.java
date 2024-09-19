@@ -41,9 +41,7 @@ public class Aluno extends Pessoa {
     @Override
     public List<Curso> obterCursos() {
         List<Curso> cursos = new ArrayList<>();
-        System.out.println("Nome do aluno" + this.getNome());
         for(Matricula matricula: matriculas){
-            System.out.println("Curso Aluno:" + matricula.getTurma().getCurso().getNome());
             cursos.add(matricula.getTurma().getCurso());
 
         }

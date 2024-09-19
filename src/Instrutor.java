@@ -40,9 +40,7 @@ public class Instrutor extends Pessoa {
     @Override
     public List<Curso> obterCursos() {
         List<Curso> cursos = new ArrayList<>();
-        System.out.println("Nome do Instrutor:" + this.getNome());
         for(Turma turma: turmas){
-            System.out.println("Curso do instrutor:" + turma.getCurso().getNome());
             cursos.add(turma.getCurso());
         }
 
